@@ -3,12 +3,13 @@
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![language](https://img.shields.io/badge/language-C%2B%2B-00599C)
 ![platform](https://img.shields.io/badge/platform-Windows-0078D6)
-![version](https://img.shields.io/badge/version-v0.1.0-FFA02D)
+![release](https://img.shields.io/github/v/release/kaikochumi/SummerCamp-ESP)
+![build](https://github.com/kaikochumi/SummerCamp-ESP/actions/workflows/build.yml/badge.svg)
 
-ゲーム **Summer Camp**（Camp Forest Green ビルド、Unreal Engine 4.18.3）用の
-外部 ESP オーバーレイです。半透明の最前面ウィンドウにプレイヤーのボックス、
-スケルトン、体力バーを描画します。ゲームプロセスは読み取り専用で開き、
-書き込みも DLL 注入もカーネルドライバーも使いません。
+**Friday the 13th: The Game** の元 *Summer Camp* ビルド（Camp Forest Green、
+Unreal Engine 4.18.3）用の外部 ESP オーバーレイです。半透明の最前面ウィンドウに
+プレイヤーのボックス、スケルトン、体力バーを描画します。ゲームプロセスは読み取り
+専用で開き、書き込みも DLL 注入もカーネルドライバーも使いません。
 
 メニューは英語と日本語に対応しています（`設定` タブで切り替え、または
 設定ファイルの `lang` キー）。
@@ -61,7 +62,9 @@ MSVC の場合は `-G` 行を外して生成されたソリューションをビ
 
 ## 使い方
 
-先にゲームを起動してからツールを起動します：
+[最新リリース](https://github.com/kaikochumi/SummerCamp-ESP/releases/latest)から
+`SummerCamp-ESP-v0.1.0-Win64.zip` をダウンロードして展開し、先にゲームを起動して
+からツールを起動します：
 
     summercamp-esp.exe --module summercamp --cfg esp.cfg
 
@@ -99,6 +102,13 @@ MSVC の場合は `-G` 行を外して生成されたソリューションをビ
 `4.18.3-38951`（Camp Forest Green ランチャー）で、**2026年10月**に
 動作確認済みです。あなたのゲームが別のビルドになった場合は、先に
 確認し直しが必要です。
+
+## ロードマップ
+
+- オブジェクト ESP：カーバッテリー、ガソリン、ヒューズ、医薬品、ナイフ
+- ポール別のボックスカラー（カウンセラー vs Jason）
+- ゲーム更新時のメニュー内バージョン通知
+- メニューの追加翻訳
 
 ## 免責事項
 

@@ -3,12 +3,14 @@
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![language](https://img.shields.io/badge/language-C%2B%2B-00599C)
 ![platform](https://img.shields.io/badge/platform-Windows-0078D6)
-![version](https://img.shields.io/badge/version-v0.1.0-FFA02D)
+![release](https://img.shields.io/github/v/release/kaikochumi/SummerCamp-ESP)
+![build](https://github.com/kaikochumi/SummerCamp-ESP/actions/workflows/build.yml/badge.svg)
 
-External ESP overlay for the game **Summer Camp** (Camp Forest Green
-build, Unreal Engine 4.18.3). It renders player boxes, skeletons and
-health bars in a transparent topmost window. The game process is opened
-with read access only: nothing is written, no injection, no driver.
+External ESP overlay for **Friday the 13th: The Game** — the original
+*Summer Camp* build set at Camp Forest Green (Unreal Engine 4.18.3). It
+renders player boxes, skeletons and health bars in a transparent
+topmost window. The game process is opened with read access only:
+nothing is written, no injection, no driver.
 
 The menu ships in English and Japanese (toggle in `Settings`, or set
 `lang` in the config file).
@@ -62,7 +64,9 @@ executable ends up at `build/summercamp-esp.exe`.
 
 ## Usage
 
-Launch the game first, then the tool:
+Grab `SummerCamp-ESP-v0.1.0-Win64.zip` from the
+[latest release](https://github.com/kaikochumi/SummerCamp-ESP/releases/latest),
+unzip it anywhere, launch the game first, then the tool:
 
     summercamp-esp.exe --module summercamp --cfg esp.cfg
 
@@ -100,6 +104,13 @@ build 38951); other game versions will have different addresses.
 `4.18.3-38951` (Camp Forest Green launcher) as of **October 2026**. If
 your game binary moves to a different build, the addresses will need to
 be re-confirmed first.
+
+## Roadmap
+
+- Objectives ESP: car battery, gas, fuse, meds, pocket knife
+- Per-role box colors (counselors vs Jason)
+- Build notice in the menu when the game updates
+- More translations for the menu
 
 ## Disclaimer
 

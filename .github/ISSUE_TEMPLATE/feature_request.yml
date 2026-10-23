@@ -1,0 +1,19 @@
+name: Feature request
+about: An idea to make the tool better
+title: "[feature] "
+labels: enhancement
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should it do?
+      description: Be concrete — what do you see on screen, and when would you use it?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it useful?
+      description: What problem does it solve in a real match?
+    validations:
+      required: true

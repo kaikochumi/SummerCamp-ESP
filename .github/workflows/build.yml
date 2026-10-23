@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure
+        run: cmake -B build
+
+      - name: Build
+        run: cmake --build build --config Release -j
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: summercamp-esp-win64
+          path: |
+            build/**/summercamp-esp.exe
+            config/preset.cfg
+          if-no-files-found: error
