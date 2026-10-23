@@ -61,7 +61,7 @@ struct Config {
 
     // --- menu ---------------------------------------------------------------
     bool menu_visible = true;
-    int lang = i18n::kEn;  // menu language: 0 English, 1 Japanese
+    int lang = i18n::kEn;  // menu language: 0 English, 1 Japanese, 2 Portuguese
     std::string github_user = "kaikochumi";
     std::string repo_url = "https://github.com/kaikochumi/summercamp-esp";
 

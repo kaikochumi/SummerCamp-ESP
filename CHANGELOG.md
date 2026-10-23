@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 — 2026-10-23
+
+- Portuguese (Brazil) menu translation added
+- Language selector now supports English / Japanese / Português
+
 ## 0.1.0 — 2026-10-21
 
 First release.

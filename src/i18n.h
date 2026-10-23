@@ -1,11 +1,11 @@
-// i18n.h — menu language support: English (default) and Japanese.
+// i18n.h — menu language support: English (default), Japanese and Portuguese.
 #pragma once
 
 #include "imgui.h"
 
 namespace i18n {
 
-enum Lang { kEn = 0, kJa = 1 };
+enum Lang { kEn = 0, kJa = 1, kPtBr = 2 };
 
 // Language from the config. The overlay fills the font pointers right
 // after building the atlas; g_font_ja stays null on systems without a

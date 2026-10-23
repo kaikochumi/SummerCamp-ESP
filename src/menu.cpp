@@ -482,11 +482,9 @@ bool draw_menu(Config& cfg, game::Game& g, float out_rect[4]) {
             }
             ImGui::Spacing();
             ImGui::SetNextItemWidth(130.f);
-            int lg = cfg.lang ? 1 : 0;
-            // The kanji of the option name only exist in the Japanese
-            // face, so the picker spells "Japanese" in English mode.
-            const char* langs[] = {"English", cfg.lang ? "日本語" : "Japanese"};
-            if (ImGui::Combo("##lang", &lg, langs, 2)) {
+            int lg = cfg.lang;
+            const char* langs[] = {"English", "日本語", "Português"};
+            if (ImGui::Combo("##lang", &lg, langs, 3)) {
                 cfg.lang = lg;
                 i18n::g_lang = lg;
                 changed = true;
